@@ -1,0 +1,15 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "generate-asl src/workflow.ts dist && esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js",
+    "postbuild": "zip -j dist/index.zip dist/index.js && rm dist/index.js"
+  },
+  "dependencies": {
+    "workflow-engine": "*"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.3"
+  }
+}

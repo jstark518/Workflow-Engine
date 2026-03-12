@@ -1,0 +1,22 @@
+{
+  "name": "workflow-engine",
+  "version": "0.1.0",
+  "description": "Decorator-based workflow engine — generates ASL JSON and Lambda handlers from a single TypeScript class",
+  "main": "src/index.ts",
+  "bin": {
+    "generate-asl": "src/cli.ts"
+  },
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "dependencies": {
+    "tsx": "^4.21.0"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-eventbridge": "^3.1007.0",
+    "@types/aws-lambda": "^8.10.161",
+    "@types/node": "^25.4.0",
+    "aws-lambda": "^1.0.7",
+    "typescript": "^5.9.3"
+  }
+}

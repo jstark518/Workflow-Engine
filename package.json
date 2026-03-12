@@ -1,0 +1,14 @@
+{
+  "name": "workflow-engine",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "npm run -w packages/workflow-engine build"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+
+  }
+}
